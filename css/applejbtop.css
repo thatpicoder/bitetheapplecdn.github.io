@@ -1,0 +1,24 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding-left: 12px;
+}
+
+/* Image stuck to the left */
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+/* Text truly centered */
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
+  font-size: 50px;
+
+}

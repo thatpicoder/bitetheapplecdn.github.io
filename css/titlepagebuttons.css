@@ -1,0 +1,58 @@
+/* ===== Layout Wrapper ===== */
+.center-wrapper {
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center (desktop) */
+  min-height: 100vh;         /* full height on desktop */
+  padding: 20px;
+}
+
+/* ===== Button Group ===== */
+.button-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 12px 20px;
+  background-color: #007aff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  display: inline-block;   /* important */
+  margin-bottom: 12px;     /* creates space above the line */
+}
+
+.btn:hover {
+  background-color: #005bb5;
+}
+
+/* ===== Mobile Optimization ===== */
+@media (max-width: 600px) {
+
+  .center-wrapper {
+    align-items: flex-start;   /* move content toward top */
+    min-height: auto;          /* remove giant empty space */
+    padding-top: 40px;
+  }
+
+  .button-group {
+    flex-direction: column;    /* stack buttons */
+    width: 100%;
+    align-items: center;
+  }
+
+  .btn {
+    width: 85%;                /* big tappable buttons */
+    text-align: center;
+    font-size: 18px;
+    padding: 14px;
+  }
+
+}
