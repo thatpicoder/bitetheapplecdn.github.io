@@ -1,13 +1,12 @@
-/* ===== Layout Wrapper ===== */
 .center-wrapper {
   display: flex;
-  justify-content: center;   /* horizontal center */
-  align-items: center;       /* vertical center (desktop) */
-  min-height: 100vh;         /* full height on desktop */
+  justify-content: center;
+  align-items: center;       
+  min-height: 100vh;         
   padding: 20px;
 }
 
-/* ===== Button Group ===== */
+
 .button-group {
   display: flex;
   gap: 16px;
@@ -15,7 +14,7 @@
   justify-content: center;
 }
 
-/* ===== Buttons ===== */
+
 .btn {
   padding: 12px 20px;
   background-color: #007aff;
@@ -33,23 +32,23 @@
   background-color: #005bb5;
 }
 
-/* ===== Mobile Optimization ===== */
+/* mobile */
 @media (max-width: 600px) {
 
   .center-wrapper {
-    align-items: flex-start;   /* move content toward top */
-    min-height: auto;          /* remove giant empty space */
+    align-items: flex-start;    
+    min-height: auto;          
     padding-top: 40px;
   }
 
   .button-group {
-    flex-direction: column;    /* stack buttons */
+    flex-direction: column;    
     width: 100%;
     align-items: center;
   }
 
   .btn {
-    width: 85%;                /* big tappable buttons */
+    width: 85%;                
     text-align: center;
     font-size: 18px;
     padding: 14px;
